@@ -1,0 +1,42 @@
+.nav_category{
+    background-color: #e7c88e;
+}
+.header_category{
+    height: 12rem;
+    margin-bottom: 5rem;
+}
+.row_category{
+    margin-top: 5rem;
+}
+.card_category{
+    background-color: #e7c88e;
+    list-style: none;
+}
+.card_category{
+    color: rgb(115, 118, 118);
+}
+.card_name{
+    color: rgb(35, 32, 32);
+}
+
+.perro-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .perro-link .card_category {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    max-width: 200px;
+    text-decoration: none;
+    color: inherit;
+    max-width: 114rem;/*ancho maximo del contenier*/
+  }
+.comida-link{
+    text-decoration: none;
+    color: inherit;
+}

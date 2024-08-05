@@ -1,0 +1,260 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container{ /*tamaños del contenedor*/
+    max-width: 114rem;/*ancho maximo del contenier*/
+    margin: 0 auto; /*centrara lo mas posible la app*/
+    padding: 0rem 1.5rem;/*relleno ue hay en los border 0 a la derecha y 1.5 a la izquierda*/
+  }
+  .nav{/*organiza el tamaño de el header*/
+    width: 100%;
+    height: 12rem;
+  }
+  .nav_container{ /*organiza la lsta*/
+    width: 100%;
+    height: 100%;
+    display: flex; /* Alínea automáticamente */
+    justify-content: space-between; /* Espacio uniforme entre los items */
+    align-items: center; /* Centra los items */
+  }
+  .nav_left{/*lista*/
+    display: flex;/* Alínea automáticamente */
+    align-items: center;/*centra la lista*/
+  }
+  .nav_list{/*organizacion de la lista casa etc*/
+    display: flex;/*los alinea uno al lado del otro */
+    list-style: none;/*uita los puntos de las listas normales*/
+    align-items: center;/*centra todo*/
+  }
+  .nav_logo{
+    margin-right: 10rem;/*margen a la derecha */
+    img {
+      max-width: 10rem;/*tamañno maximo de la imagen */
+    }
+  }
+  .nav_item{/*tamaños de la lista*/
+    margin: 0rem 0.8rem;
+  }
+  .nav_link{/*decoracion o como se ve a lista (letra, tamaño)*/
+    text-decoration: none;/*quitala linnea de abajo de la letra*/
+    font-weight: 600;/*le da un ancho a la letra*/
+    color: #003459;
+  }
+  .btn{
+    text-decoration: none;/*quitala linnea de abajo de la letra*/
+    padding: 1.3rem 2.2rem;/*centra mas*/
+  }
+  .nav_btn{/*boton "sigue nuestra comunidad"*/
+    background-color: #003459;/*color de fondo del boton*/
+    border-radius: 10rem;/*borde redondo*/
+    color: #fff;/*color de la letra*/
+  }
+  .header_wrapper_container{/*mover el texto*/
+    width: 100%;
+    height: calc(100vh - 12rem);/*calcula la distancia de arriba a abajo para centrar*/
+    display: flex;
+    align-items: center;
+  }
+  .header_wrapper{/*lo que ocupa el texto*/
+    width: 50%;
+  }
+  .header_main_title{/*tamaño de el titulo  margen en comparacion al boton*/
+    font-size: 4.8rem;
+    margin-bottom: 5rem;
+  }
+  .header_btn_outlined{/*boton de "quiero adoptar"*/
+    border: 2px solid #003459;
+    border-radius: 10rem;
+    color: #003459;
+    font-weight: 600;
+  }
+
+  
+@media (max-width: 1200px) {
+    .header {
+      background-image: url(../images/fondo2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .header_wrapper {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .header {
+      background-image: url(../images/fondo2.png); /* Aplicar la imagen de fondo al header */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .header_wrapper_container {
+      height: calc(100vh - 12rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent; /* Ajustar según sea necesario */
+    }
+    .nav_list{
+      margin-top: 20px;
+      margin-right: 8%;
+    }
+    .nav_right{
+      font-size: 15px;
+      margin-right: 40px;
+      display: flex;
+    }
+    .header_wrapper {
+      width: 100%;
+      padding: 5rem 1.5rem; /* Añadir padding según sea necesario */
+    }
+    .header_main_title {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #fff; /* Color del texto */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejor legibilidad */
+    }
+    .header_btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .btn.header_btn_outlined {
+      padding: 1.2rem 2rem;
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      background-image: url(../images/fondo2.png); /* Aplicar la imagen de fondo al header */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .header_wrapper_container {
+      background-color: transparent; /* Ajustar según sea necesario */
+      padding: 4rem 1rem; /* Ajustar el padding según sea necesario */
+    }
+    .header_main_title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .header_btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .btn.header_btn_outlined {
+      padding: 1rem 1.8rem;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header {
+      background-image: url(../images/fondo2.png); /* Aplicar la imagen de fondo al header */
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+    }
+    .nav_list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20rem;
+  
+    }
+    .nav_right{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 70px;
+    }
+    .nav_item{
+      margin-bottom: 10px;
+    }
+    .nav_btn, .btn {
+      padding: 1rem 1.5rem;
+    }
+    .header_main_title {
+      font-size: 2rem;
+    }
+    .header_btn {
+      margin-top: 1.5rem;
+    }
+    .btn.header_btn_outlined {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /*la otra paguina*/
+  
+  @media (max-width: 650px) {
+    .section {
+      width: 100%;
+    }
+    .section_header{
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      justify-content: flex-start;
+    }
+    .section_header_left{
+      margin-bottom: 3rem;
+    }
+    .section_header_right{
+      text-align: left;
+    }
+    .footer{
+      width: 100%;
+      margin-top: 10rem;
+      background-color: #f7dba7;
+    }
+    .footer_top{
+      flex-direction: column;
+    }
+    .footer_top_heading{
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    .footer_top_form{
+      width: 100%;
+      background-color: #fffaf0;
+     padding: 1rem 2rem;
+      border-radius: 1rem;
+    }
+    .footer_top_form_input{
+      padding: 1.1rem;
+      width: 100%;   
+      margin: 20px;
+      margin-left: 1px;
+    }
+    .footer_top_form_btn{
+      background-color: #003459;
+      margin-left: 5px;
+      margin-top: 90px;;
+      width: 100%;
+      border-radius: 8px;
+      align-items: center;
+    }
+    .footer_nav_container {
+      display: flex;
+      justify-content: center; /* Alinea los elementos al centro horizontalmente */
+      align-items: center; /* Alinea los elementos al centro verticalmente (opcional) */
+      padding-bottom: 200px;
+    }
+    
+    .nav_item {
+      margin: 0 5px; /* Margen horizontal entre los elementos */
+      font-size: 15px;
+      text-align: center;
+    }
+  }
